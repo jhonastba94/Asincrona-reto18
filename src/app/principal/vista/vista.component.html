@@ -1,0 +1,21 @@
+<h1 class="text-center fw-bold">API https://jsonplaceholder.typicode.com/todos
+</h1>
+<section class="container-sm">
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tittle</th>
+          <th>Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of comentarios">
+          <td>{{item.id}}</td>
+          <td>{{item.title}}</td>
+          <td>{{item.completed}}</td>
+          
+        </tr>
+      </tbody>
+  </table>
+</section>

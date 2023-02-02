@@ -1,0 +1,19 @@
+<section class="container py-4">
+  <form class="form form-group">
+    <label class="form-label">Email:</label>
+    <input type="email" [(ngModel)]="email" name="email" class="form-control" />
+    <label class="form-label"> Password:</label>
+    <input
+      type="password"
+      [(ngModel)]="password"
+      name="password"
+      class="form-control"
+    />
+    <button (click)="submit()" class="btn btn-primary mt-2">Registrarse</button>
+  </form>
+</section>
+<section *ngIf="response" class="container alert alert-ligth color-blue">
+  <h2>Response</h2>
+  <p>{{ response | json }}</p>
+</section>
+  
